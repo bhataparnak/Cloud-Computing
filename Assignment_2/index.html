@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Earthquake Data</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="assignment.js"></script>
+  <script type="text/javascript" src="assignment_9.js"></script>
+</head>
+<body>
+
+<div class="header">
+  <h1>Welcome</h1>
+  <h2>Assignment 2</h2>
+  
+</div>
+<!-- Question 5 -->
+
+<div class="content">
+  <h2 align="center">Search Data</h2>
+   <!-- Question 5 -->
+  <div class="mb-10">
+      <label><b>Question5</b></label><br/>
+      <label><b>Enter Location Details</b></label>
+      <form name="current_id" action="/assignment" onsubmit="return get_id_quake()" method="post">
+        Enter ID<input type="text" id="id_detail" placeholder="Enter ID" name="id_detail" required>
+       <input type="submit" value="Get Data">
+      </form>
+    </div>
+    
+   <!-- Question 7 -->
+    <div class="mb-10">
+      <label><b>Question 7 Allow a user to give a part of a location name and a distance, and show the largest magnitude quake,within that distance.
+      </b></label><br/>
+      <label><b>Enter Location Name and Distance</b></label>
+      <form name="name_distance_mag" action="/assignment" onsubmit="return get_lat_lon_val('name_val')" method="post">
+        Enter Place: <input id="name_val" placeholder="Enter Name" type="text" name="name_val" required>
+        <input type="submit" value="Get Lat_Lon">
+      </form><br/>
+      <label>Enter LAT and LONG obtained from the previous step</label>
+       <form name="lat_lon_dist" action="/assignment" onsubmit="return get_max_mag()" method="post">
+        Enter Latitude: <input id="lat_loc" placeholder="Enter Latitude" type="text" name="lat_loc" required>
+        Enter Longitude: <input id="long_loc" placeholder="Enter Longitude" type="text" name="long_loc" required>
+        Enter Distance<input type="text" id="dist_range" placeholder="Enter Km Range Eg 200" name="dist_range" required>
+        Enter Min Depth<input type="text" id="min_depth" placeholder="Enter Depth Eg 2" name="min_depth" required>
+        Enter Max Depth<input type="text" id="max_depth" placeholder="Enter Depth Eg 50" name="max_depth" required>
+        <input type="submit" value="Get Data">
+      </form>
+    </div>
+
+    <!-- Question 6 -->
+
+    <div class="mb-10">
+       <h4>Question 6 </h4>
+      <form name="loc1_loc2_val" action="/assignment" onsubmit="return quiz2_question7('loc1_lan','loc1_lon','loc2_lan','loc2_lon','dep1_id','dep2_id')" method="post">
+        Enter Location 1 Latitude: <input id="loc1_lan" placeholder="Enter Latitude for Location 1" type="text" name="lat_loc1" required>
+        Enter Location 1 Longitude: <input id="loc1_lon" placeholder="Enter Longitude for Location 2" type="text" name="long_loc1" required></br>
+        Enter Location 2 Latitude: <input id="loc2_lan" placeholder="Enter LatitudeLocation 2" type="text" name="lat_loc2" required>
+        Enter Location 2 Longitude: <input id="loc2_lon" placeholder="Enter Longitude Location 2" type="text" name="long_loc2" required></br>
+        Enter Depth 1: <input id="dep1_id" placeholder="Depth 1" type="text" name="dep1_name" required>
+        Enter Depth 2: <input id="dep2_id" placeholder="Depth 2" type="text" name="dep2_name" required></br>
+        <input type="submit" value="Search Quakes">
+      </form>
+    </div>
+
+    <!-- Question 8 -->
+
+    <div class="mb-10">
+      <h4>Question 8 </h4>
+     <form name="q8_form" action="/assignment" onsubmit="return quiz8_assignment('q8_lan1','q8_lon1','q8_lan2','q8_lon2','n_id')" method="post">
+       Enter Location 1 Latitude: <input id="q8_lan1" placeholder="Enter Latitude for Location 1" type="text" name="q8_lan1_n" required>
+       Enter Location 1 Longitude: <input id="q8_lon1" placeholder="Enter Longitude for Location 2" type="text" name="q8_lon1_n" required></br>
+       Enter Location 2 Latitude: <input id="q8_lan2" placeholder="Enter LatitudeLocation 2" type="text" name="q8_lan2_n" required>
+       Enter Location 2 Longitude: <input id="q8_lon2" placeholder="Enter Longitude Location 2" type="text" name="q8_lon2_n" required></br>
+       Enter N value: <input id="n_id" placeholder="N value" type="text" name="n_id_name" required>
+       <input type="submit" value="Search Quakes">
+     </form>
+      <label>Update Data</label>
+      <form name="selected_name_form" action="/assignment" onsubmit="return update_details()" method="post">
+        ID: <input type="text" id="ninth_id_n1" placeholder="Enter ID" name="ninth_name_rep1" required>
+        place to replace: <input type="text" id="ninth_id_n2" placeholder="Enter New place to replace" name="ninth_name_rep2" required>
+        <input type="submit" value="Replace Data">
+      </form>
+   </div>
+    <div class="mb-10">
+      <label>Updated details</label>
+      <form name="updated_det" action="/assignment" onsubmit="return updated_details()" method="post">
+        ID: <input type="text" id="name_upd" placeholder="Enter ID to see updated details" name="name_upd" required>
+        <input type="submit" value="View Data">
+      </form>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="mb-10">
+      <label><b>Question 9</b></label><br/>
+      <form name="lat_lon_depth_mag_bonus" action="/assignment_9" onsubmit="return get_max_mag_bonus()" method="post">
+        Enter Latitude1: <input id="lat_loc_bonus" placeholder="Enter Latitude loc1" type="text" name="lat_loc_bonus">
+        Enter Longitude1: <input id="long_loc_bonus" placeholder="Enter Longitude loc1" type="text" name="long_loc_bonus">
+        Enter Latitude2: <input id="lat_loc_bonus_2" placeholder="Enter Latitude loc1" type="text" name="lat_loc_bonus">
+        Enter Longitude2: <input id="long_loc_bonus_2" placeholder="Enter Longitude loc1" type="text" name="long_loc_bonus">
+        Enter Location1: <input id="loc1_bonus" placeholder="Enter Location 1" type="text" name="lat_loc_bonus">
+        Enter Location2: <input id="loc2_bonus" placeholder="Enter Location 2" type="text" name="long_loc_bonus">
+        Enter Min Depth: <input type="text" id="min_depth_bonus" placeholder="Enter Depth Eg 2" name="min_depth_bonus">
+        Enter Max Depth: <input type="text" id="max_depth_bonus" placeholder="Enter Depth Eg 50" name="max_depth_bonus">
+        Enter Min Mag: <input type="text" id="min_mag_bonus" placeholder="Enter min mag eg 1.2" name="min_mag_bonus">
+        Enter Max Mag: <input type="text" id="max_mag_bonus" placeholder="Enter min mag eg 6" name="max_mag_bonus">
+        <input type="submit" value="Get Data">
+      </form>
+    </div>
+  <div id="myData">  </div>
+  <div id="output_div">  </div>
+</div>
+</body>
+</html>
+

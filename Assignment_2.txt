@@ -1,0 +1,31 @@
+  Sample Things to do
+
+  1. Show a web page and interface (which resides on the cloud provider) with your name,
+     and below that, Student ID at the top of every web page dispayed 
+     (for this quiz). Please use a large font.
+    
+     The cloud service provider is either IBM Cloud (BlueMix) or Microsoft Azure.
+
+     On that same page, allow a user to give an id value (such as "ak020921jc6m"), then please show 
+     the details of that quake (if it exists), location (lat, long, place name), mag, time, depth.
+     If there are any other quakes with the same mag (same mag plus or minus 0.1 mag), please list
+     those as well.
+
+  2. (Web page) Allow a user to give two location (pair) values (lat and long for two different locations) 
+     (those two locations create a boundary, a box) and a depth range (for example from 2 to 20),
+     then: display the 3 largest mag quakes within that (bounding) box, please display the id, location (as above),
+     the mag, and time.
+
+  3. (Web page), Allow a user to give a part of a location name (for example "Yellowstone" or "Alaska"), 
+     and a depth range (for example from 2 to 200), and a distance (for example 550 km), 
+     and show the largest magnitude quake (if one exists), within that distance.
+     Note, that there may be several locations in Alaska within that given depth range, 
+     so list the largest mag quake for each.Please display the lat, long, mag, place, depth and date for each.
+   
+  4. Allow a user to give two location (pair) values (lat and long for two different locations) 
+     (those two locations create a boundary, a box), and a value N, then: 
+     display the N largest mag quakes within that (bounding) box, (display lat, long, place, mag, time and id)
+     then allow a user to choose any of those quakes (displayed) and modify any of the values: 
+     lat, long, place, mag, time and id.
+
+ 
