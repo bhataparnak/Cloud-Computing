@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>In memory Caching using REDIS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type="text/css" rel="stylesheet" href="style.css">
+<script type="text/javascript" src="assignment.js"></script>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Welcome</h1>
+    <h2>Assignement 3</h2>
+  </div>
+ 
+<div class="content">
+  <h2 class="pl-12">Search</h2>
+                <!-- question 6 -->
+                <div class="mb-10">
+                  <h4>Question 6 : </h4>
+                  <form name="q6_form" action="/assignment" onsubmit="return question6_assignment()" method="post">
+                  nst 1 : <input id="q61" placeholder="nst 1" type="text" name="nst_name1" required>
+                  nst 2 : <input id="q62" placeholder="nst 2" type="text" name="nst_name2" required>
+                  <input type="submit" value="Search data">
+                  </form>
+                </div>
+              </br>
+        
+            <div class="mb-10">
+                <h4>Question 7 : </h4>
+                <form name="q7_form" action="/assignment" onsubmit="return question7_assignment()" method="post">
+                nst 1 : <input id="q71" placeholder="nst 3" type="text" name="nst_name1" required>
+                nst 2 : <input id="q72" placeholder="nst 4" type="text" name="nst_name2" required>
+                <input type="submit" value="Search data">
+                </form>
+            </div>
+          </br>
+
+         <div class="mb-10">
+                <h4>Question 8 : </h4>
+                <form name="q8_form" action="/assignment" onsubmit="return question8_assignment()" method="post">
+                nst 1 : <input id="q81" placeholder="nst 1" type="text" name="nst_name1" required>
+                nst 2 : <input id="q82" placeholder="nst 2" type="text" name="nst_name2" required>
+                Number : <input id="q83" placeholder="Enter number for N times" type="text" name="num_3" required>
+                <input type="submit" value="Search data">
+                </form>
+          </div>
+
+          <div class="mb-10">
+                <h4>Question 9 : </h4>
+                <form name="q9_form" action="/assignment" onsubmit="return question9_assignment()" method="post">
+                nst 1 : <input id="q91" placeholder="nst 1" type="text" name="nst_name1" required>
+                nst 2 : <input id="q92" placeholder="nst 2" type="text" name="nst_name2" required>
+                Number : <input id="q93" placeholder="Enter number for in-memory caches" type="text" name="num_3" required>
+                <input type="submit" value="Search data">
+                </form>
+          </div>
+  <table style="width:100%">
+    <td>
+  <div id="myData">  </div>
+    </td>
+</table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+  Sample Things to do 
+  
+ 1. Show a web page and interface (which resides on the cloud provider) with your name,
+     and below that, Student ID at the top of every web page dispayed 
+     (for this quiz). Please use a large font.The cloud service providers are IBM Cloud (BlueMix), Microsoft Azure, Amazon AWS. You may use any you wish.
+
+    Import the datasets into a Relational Data Base (SQL), if you have already done this, (briefly) explain/describe
+    how you did this. Please note that for some parts of the following you will need to create indexes (keys)
+    appropriately.
+
+  2. Allow a user, through a web form, to give a nst range (for example 80 to 85), and show us the matching result tuples
+     for that request. (Show nst, lat, long, place, mag, id)
+     Show us the time taken to perform that operation
+
+
+
+  3. Allow a user to give a nst range (for example 80 to 85), and you will generate a random select within that nst range,
+     select all quakes with that nst value, show us the result, as in the previous question.
+     Show us the nst value generated, then show the results.
+     Show us the time taken to perform that operation.
+
+
+     
+  4. Modify part 3, to allow a value N (up to 500), and repeat the selections N times.
+     
+
+  5. Repeat 4. using an in-memory caching mechanism (NOT an in-memory database) repeat the previous step, then show us
+

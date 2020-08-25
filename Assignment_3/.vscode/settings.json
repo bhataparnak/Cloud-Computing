@@ -1,0 +1,4 @@
+{
+    "appService.deploySubpath": ".",
+    "git.ignoreLimitWarning": true
+}
