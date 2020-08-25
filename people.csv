@@ -1,0 +1,17 @@
+Person,Year,Picture,Description
+Shaffi Goldwasser,2012,goldwasser.jpg,cryptography theory computational number theory
+Edwin Catmull, ,naur.jpg,graphics animation
+Raj Reddy,1994,reddy.jpg,ai speech language recognition
+Manuel Blum,1995,blum.jpg,theory numeric computation Goldwasser advisor
+Alan Turing,,turing.jpg,did not get the turing prize
+Jim Gray,1998,,database theory
+Leslie Lamport,2008,,distributed concurrent system logical clock
+Barbara Liskov,2002,,distributed concurrent system
+Yoshua Bengio,2018,bengio.jpg,neural networks deep leaning ai
+Whitfield Diffie,2015,diffie.jpg,public key cryptography key exchange
+Marvin Minsky,1969,,artificial intelligence theory
+Donald Knuth,1974,knuth.jpg,analysis algorithm elmasri advisor
+Ken Thompson,1983,thompson.jpg,unix operating systems theory
+Peter Naur,2005,naur.jpg,compilers theory programming language
+Vint Cerf, ,,internet www tcp/ip
+Fred Brooks,1999,,software engineering computer architecture

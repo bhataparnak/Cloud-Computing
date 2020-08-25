@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Details Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="assignment.js"></script>
+</head>
+<body>
+
+<div class="header">
+  <h1>Welcome</h1>
+  <h2>Assignment 1</h2>
+  
+</div>
+<!-- Question 5 -->
+<img src="knuth.jpg" style="width:200px;height:200px;">
+<div class="content">
+  <h2 align="center">Search Data</h2>
+    <div class="mb-10">
+   
+    
+   <!-- --6th question-- -->
+    <div class="mb-10">
+      <label>Question 6</label><br/>
+      <label>Enter Name</label>
+      <form name="selected_id_form" action="/assignment" onsubmit="return emp_id_details()" method="post">
+        <input type="text" id="emp_id" placeholder="Enter Name" name="emp_id" required>
+        <input type="submit" value="Search Data">
+      </form>
+    </div>
+    
+    <!-- --7th question need to re submit this as need to take keyword from description-- -->
+    <div class="mb-10">
+      <label>Question 7</label><br/>
+      <label>Keywords</label>
+      <form name="emp_details_form" action="/assignment" onsubmit="return emp_details_box()" method="post">
+        <input type="text" id="emp_name" placeholder="Enter Keywords" name="emp_name" required>
+        <input type="submit" value="Search Data">
+      </form>
+    </div>
+    
+    <!-- --8th question-- -->
+    <div class="mb-10">
+       <label>Question 8</label><br/>
+      <label>Update Description</label>
+      <form name="selected_name_form" action="/assignment" onsubmit="return update_details()" method="post">
+        Name: <input type="text" id="name_cap" placeholder="Enter Name" name="name_cap" required>
+        Description: <input type="text" id="cap_msg" placeholder="Enter Description" name="cap_msg" required>
+        <input type="submit" value="update Data">
+      </form>
+    </div>
+    <div class="mb-10">
+      <label>Updated details</label>
+      <form name="updated_det" action="/assignment" onsubmit="return updated_details()" method="post">
+        Name: <input type="text" id="name_upd" placeholder="Enter Name to see updated details" name="name_upd" required>
+        <input type="submit" value="View Data">
+      </form>
+    </div>
+    
+    <!-- --9th question-- -->
+    <div class="mb-10">
+      <label>Question 9(part1)</label><br/>
+      <label>Replace name</label>
+      <form name="ninth_from_replace" action="/assignment" onsubmit="return ninth_replace()" method="post">
+        Name: <input type="text" id="ninth_id_n1" placeholder="Enter Name" name="ninth_name_rep1" required>
+        Name to replace: <input type="text" id="ninth_id_n2" placeholder="Enter New Name to replace" name="ninth_name_rep2" required>
+        <input type="submit" value="Replace Data">
+      </form>
+    </div>
+
+    <div class="mb-10">
+      <label>Question 9(part2)</label><br/>
+      <label>Remove Data from DB for given name</label>
+      <form name="ninth_from" action="/assignment" onsubmit="return ninth_remove()" method="post">
+        Name: <input type="text" id="ninth_id_remove" placeholder="Enter Name to remove data" name="ninth_name_remove" required>
+        <input type="submit" value="Remove Data">
+      </form>
+    </div>
+    <div id="myData">  </div>
+    <div id="output_div">  </div>
+</div>
+</body>
+</html>
+

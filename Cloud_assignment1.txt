@@ -1,0 +1,20 @@
+
+ Sample Things to do
+ 1. Show a web page and interface (which resides on the cloud provider) with your 
+    Student ID at the top and below that, your name, at the top of every web page dispayed 
+    (for this quiz). Please use a large font.
+    For this part (question), below that please show Donald Knuth's picture (provided).
+    The cloud service provider is IBM Cloud (BlueMix).
+
+ 2. Through a web interface (page), allow user to give a person's name, and you show the year, 
+    and the corresponding picture (or show "no picture available").
+
+ 3. (Web Page) allow a user to give a keyword and you show all corresponding pictures, and description. 
+
+ 4. (Web page) allow a user to give a name then modify the description, then after the description is modified,
+     you display the corresponding name, picture, and description.
+
+ 5. Allow a user to replace (with an already existing one) or remove an entire entry when given the name.
+    Please implement both functionality.
+
+
