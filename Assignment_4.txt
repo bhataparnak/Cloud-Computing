@@ -1,0 +1,13 @@
+
+Sample things to do with Highcharts
+  
+  1. Please show a page, followed by a vertical bar chart on that page, where the user, through a web form, 
+     will give a country name (column C), then you will display a bar chart with labels (volcano name) 
+     on the top of each bar for each volcano in that country.
+  
+  2. Allow a user, through a web form, to give a volcano number range (for example 40000 to 41000),
+     and show a point chart (scatter diagram) where the X axis is the volcano number and the Y axis 
+     is the elevation.
+     (Please note that a few of the volcanos are under water or ground, so the elevation may be negative.) 
+     Please scale so that it fits on the screen, occupying between 70 to 80% of the screen width.
+     Please label both axis.
