@@ -92,6 +92,7 @@ To run locally
 Run your application locally.
 
 View your app at: http://localhost:8000/profile
+
 Update profile.js with appropriate queries.
 
 Remember to stop the application when not in use
