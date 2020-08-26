@@ -39,7 +39,7 @@ Start by creating an instance of the Db2 on Cloud service.
 6) After creating the credentials expand the created credential to get "dns". copy and paste this dns in a notepad or somewhere we will need this to add in our Node.js application to connect to the database.
 
 example
-"dsn": "DATABASE=BLUDB;HOSTNAME=dashdb-txn-sbox-yp-dal09-12.services.dal.bluemix.net;PORT=50000;PROTOCOL=TCPIP;UID=xyzz88990;PWD=yourpassword;",
+"dsn": "DATABASE=BLUDB;HOSTNAME=Your_Hostname;PORT=50000;PROTOCOL=TCPIP;UID=Your_UID;PWD=your_password;",
 
 [Note:- Do not copy paste the above thing it won't work it's just an example]
 
