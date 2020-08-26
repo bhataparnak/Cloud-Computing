@@ -155,6 +155,47 @@ To query database
 
 In Object Explorer, right-click yourDatabase and select New Query. A blank query window opens that is connected to your database.
 
+What is Caching?
+Caching is the process of storing data into a cache. A cache is a temporary data store where data is kept for later use.
+A cache as a data store is easier for the client (or server) to reach, as opposed to a permanent data store that might be located on a different service, which takes more time and resources to reach (a database or an external API endpoint).
+
+What is Redis? Why use Redis?
+Redis is a high performance open source NoSQL database primarily used as a caching solution for various types of applications. What is surprising is that it stores all its data in the RAM and promises highly optimized data reads and writes. 
+
+Setup Redis
+There are multiple ways to run Redis. The easiest way to start is to sign-up for the free Redis Cloud service offered by Redis Labs. You can then connect to the Redis Cloud database from your app that runs on any platform (Mac, Windows, Linux), or on cloud or PaaS.
+
+Redis Cloud
+Redis Labs offers Redis Cloud as a fully managed database as a service for free for datasets up to 30 MB. You can choose to run the Redis Cloud database as a service on Amazon Web Services, Microsoft Azure, or Google Cloud Platform. It is also available in many different regions of the world. 
+Creating a Redis instance with Redis Cloud 
+
+1) Sign-up for a free Redis Cloud account: Visit the Redis Labs Get Started page, and click on SIGN UP under “Cloud Hosted” section.
+2) Setup a database endpoint: Once you create and verify your email address, you can login to your Redis Cloud account and create a new database. Your Redis Cloud database will be password protected. The URL to your endpoint will look like:
+redis-11111.c1.us-east-1-1.ec2.cloud.redislabs.com:12345
+ 
+In this example, 12345 is the port number of your Redis Cloud service.
+ 
+redis-11111.c1.us-east-1-1.ec2.cloud.redislabs.com is the URL of your Redis service.
+
+Profile.js (Present in Assignement_3/routes) should look like this.Update the details by addiding your credentials.
+
+var redis = require("redis");
+var redisHost = 'redis.us-east-1-1.ec2.cloud.redislabs.com'; //update this
+var redisPort = process.argv[3] || 12345; //update this
+var redisAuth = 'Your_Auth_Key'; //update this
+var client = redis.createClient ({
+    port : redisPort,
+    host : redisHost
+    });  
+    client.auth(redisAuth, function(err, response){
+    if(err){
+    throw err;
+    }
+    else{
+        console.log("Connection estabished to redis");
+    }
+    });
+
 
 Deploy Node.js to Azure App Service using Visual Studio Code
 
