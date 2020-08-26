@@ -90,7 +90,7 @@ Copy this fully qualified server name for use to connect to your server and data
 
 Your IP address can now pass through the IP firewall. You can now connect to your database using SQL Server Management Studio or another tool of your choice.
 
-Connection.js file in the node application should look like this (open this file and update details. This file is present in the Assignme_3 folder)
+Connection.js file in the node application should look like this (open this file and update details. This file is present in the Assignment_4 folder)
 
 // Create connection to database
 const config={
