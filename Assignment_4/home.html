@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Assignment 4</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src = "https://code.highcharts.com/highcharts.js"></script> 
+<link type="text/css" rel="stylesheet" href="style.css">
+<script type="text/javascript" src="assignment.js"></script>
+
+
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Welcome</h1>
+    <h2>Highcharts</h2>
+  </div>
+
+
+<!-- Question 6 -->
+<div class="mb-10">
+    <h4>Question</h4>
+    <form name="barForm" action="/assignment.js" onsubmit="return example_bar_quiz()" method="post">
+    Enter Country Name : <input id="pieIdFir"  placeholder="Country Name" type="text" name="pieNameFir" required>
+    <button type="submit" value="Search data">click for data</button>
+    </form>
+</div>
+</br>
+
+<div class="mb-10">
+    <h4>Question</h4>
+    <form name="scatterForm" action="/assignment.js" onsubmit="return example_scatter()" method="post">
+    Enter values : <input id="scatIdFir"  placeholder="begining Number" type="text" name="scatNameFir" required>
+    Enter values : <input id="scatIdSec"  placeholder="Ending Number" type="text" name="scatNameSec" required>
+    <button type="submit" value="Search data">click for data</button>
+    </form>
+  </div>
+</br>
+
+<div id = "container_bar" style = "width: 50%  "></div>
+
+<table style="width:100%">
+</table>
+<div id="output_div">  </div>
+</div>
+
+<div id = "container" style = "width: 550px; height: 400px; margin: 0 auto"></div>
+</body>
+</html>

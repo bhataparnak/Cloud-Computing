@@ -1,0 +1,8 @@
+.build/*
+Packages/*
+.travis.yml
+docker-compose.yml
+Dockerfile
+*.xcodeproj/
+node_modules/.cache
+node_modules/ibm_db/installer/clidriver

@@ -4,15 +4,15 @@ const{Connection,Request}=require("tedious");
 const config={
  authentication:{
  options:{
- userName:"foobar", //update this
+ userName:"adbdb", //update this
  password:"pwd123", //update this
 
 },
  type:"default"
 },
- server:"foobar.database.windows.net", //update this
+ server:"mysqlserver.database.windows.net", //update this
  options:{
- database:"foobar", //update this
+ database:"adbdb", //update this
  encrypt:true,
  rowCollectionOnRequestCompletion:true,
  useColumnNames:true,

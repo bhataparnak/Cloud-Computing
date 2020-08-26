@@ -8,7 +8,7 @@ const random = require('random');
 var redis = require("redis");
 var redisHost = 'redis-xxxxx.c56.east-us.azure.cloud.redislabs.com'; //update this
 var redisPort = process.argv[3] || xxxxx; //update this
-var redisAuth = 'xTwyh07KmPLDO8Kn9QxLXrcZfmiyJiaJ';
+var redisAuth = 'xTwyh07KmPLDO8Kn9QxLXrc'; //update this
 var client = redis.createClient ({
     port : redisPort,
     host : redisHost

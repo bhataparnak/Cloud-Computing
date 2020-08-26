@@ -1,0 +1,84 @@
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+
+
+/* Header/Logo Title */
+.header {
+  padding: 5px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Page Content */
+.content {padding:20px;}
+
+.mb-10{margin-bottom: 10px;}
+.pl-12{padding-left: 12px;}
+input[type=text] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px;
+  display: inline-block;
+}
+
+/*Button Styles*/
+
+button[type=button] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button[type=submit] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+#output_div {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  /* border: 1px solid #EBEBEB; */
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+#output_div caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+#output_div th {
+font-weight: 600;
+  padding: 0.5em;
+}
+#output_div td, #output_div th, #output_div caption {
+  padding: 0.5em;
+}
+#datataboutput_divle thead tr, #output_div tr:nth-child(even) {
+  background: #f8f8f8;
+}
+#output_div tr:hover {
+  background: #f1f7ff;
+}
