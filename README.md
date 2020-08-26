@@ -9,12 +9,12 @@ The following instructions are for deploying the application as a Cloud Foundry 
 Prerequisites
 You'll need the following:
 
-IBM Cloud account
-Cloud Foundry CLI
-Git
-Node.js
-Sublime or VS code editor
-Basic knowledge of SQL
+1) IBM Cloud account
+2) Cloud Foundry CLI
+3) Git
+4) Node.js
+5) Sublime or VS code editor
+6) Basic knowledge of SQL
 
 What is Db2?
 Db2 is a Relational Database Management System(RDBMS). It organizes the storage of a vast array of types of data, and optimizes the later retrieval of that data. It implements the standard concepts of a relational database, as well as the SQL standard query language that is available on relational database systems. It also allows storage in non-relational formats such as XML and JSON.
