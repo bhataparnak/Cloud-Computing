@@ -94,3 +94,15 @@ To run locally
 Run your application locally.
 
 View your app at: http://localhost:8000/profile
+
+Update profile.js with appropriate queries.
+
+Remember to stop the application when not in use
+
+To stop the application on IBM cloud
+
+1) Access your IBM Cloud account.
+2) Click the three parallel lines in the upper left corner of the page and select Dashboard.
+3) Click the specific application name in the Apps section of the dashboard.
+4) Click the 3 dots to the right of the specific application in the application list.
+5) Select Stop App
